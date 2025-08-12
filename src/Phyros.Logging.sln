@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "..\build\_build.csproj", "{97B50D7E-74F9-4583-8A02-0254AB129BFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phyros.Logging", "Phyros.Logging\Phyros.Logging.csproj", "{0DA56D6B-A12D-489D-A239-5A54B7F8FD7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A5ECF64-D0E6-47C7-BD7C-A86DABAD476C}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\ci.yml = ..\.github\workflows\ci.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phyros.Logging.Tests", "Phyros.Logging.Tests\Phyros.Logging.Tests.csproj", "{88E17DE2-CDF4-4BA5-9C15-532B1D1ACDB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phyros.Logging.Serilog", "Phyros.Logging.Serilog\Phyros.Logging.Serilog.csproj", "{0708411B-4520-4912-A1C2-214090B8F4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phyros.Logging.ConsoleTester", "Phyros.Logging.ConsoleTester\Phyros.Logging.ConsoleTester.csproj", "{DE905ED2-9074-217E-F285-2AA85D70BE1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97B50D7E-74F9-4583-8A02-0254AB129BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B50D7E-74F9-4583-8A02-0254AB129BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA56D6B-A12D-489D-A239-5A54B7F8FD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA56D6B-A12D-489D-A239-5A54B7F8FD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA56D6B-A12D-489D-A239-5A54B7F8FD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA56D6B-A12D-489D-A239-5A54B7F8FD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E17DE2-CDF4-4BA5-9C15-532B1D1ACDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E17DE2-CDF4-4BA5-9C15-532B1D1ACDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E17DE2-CDF4-4BA5-9C15-532B1D1ACDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E17DE2-CDF4-4BA5-9C15-532B1D1ACDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0708411B-4520-4912-A1C2-214090B8F4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0708411B-4520-4912-A1C2-214090B8F4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0708411B-4520-4912-A1C2-214090B8F4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0708411B-4520-4912-A1C2-214090B8F4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE905ED2-9074-217E-F285-2AA85D70BE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE905ED2-9074-217E-F285-2AA85D70BE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE905ED2-9074-217E-F285-2AA85D70BE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE905ED2-9074-217E-F285-2AA85D70BE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49362E47-4EAB-4CFF-B2C7-9932A25B4EB7}
+	EndGlobalSection
+EndGlobal

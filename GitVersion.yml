@@ -1,0 +1,42 @@
+mode: ContinuousDeployment
+assembly-versioning-scheme: MajorMinorPatch
+tag-prefix: '[vV]'
+next-version: v1.0.0
+assembly-informational-format: "{InformationalVersion}"
+
+branches: 
+  main:
+    regex: ^main$
+    is-main-branch: true
+    increment: Patch
+  hotfix:
+    regex: ^hotfix[/-]
+    label: 'fix'
+    increment: Patch
+    source-branches:
+      - main
+      - allothers
+  feature:
+    regex: ^feature[/-]
+    label: 'feature'
+    increment: Patch
+    source-branches:
+      - main
+      - allothers
+  allothers:
+    regex: ^(?!main$|hotfix[/-]|feature[/-]).*
+    label: 'non-main'
+    increment: Patch
+    source-branches: 
+      - main
+      - hotfix
+      - feature
+      
+ignore:
+  sha: []
+
+commit-message-incrementing: Enabled
+major-version-bump-message: '\+semver:\s?(breaking|major)'
+minor-version-bump-message: '\+semver:\s?(feature|minor)'
+patch-version-bump-message: '\+semver:\s?(fix|patch)'
+no-bump-message: '\+semver:\s?(none|skip|no-bump)'
